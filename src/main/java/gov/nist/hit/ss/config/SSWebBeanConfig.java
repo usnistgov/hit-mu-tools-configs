@@ -5,9 +5,9 @@ import gov.nist.hit.core.hl7v2.service.HL7V2MessageParserImpl;
 import gov.nist.hit.core.hl7v2.service.HL7V2MessageValidator;
 import gov.nist.hit.core.hl7v2.service.HL7V2MessageValidatorImpl;
 import gov.nist.hit.core.hl7v2.service.HL7V2ResourcebundleLoaderImpl;
+import gov.nist.hit.core.hl7v2.service.HL7V2ValidationReportGenerator;
+import gov.nist.hit.core.hl7v2.service.HL7V2ValidationReportGeneratorImpl;
 import gov.nist.hit.core.service.ResourcebundleLoader;
-import gov.nist.hit.core.service.ValidationReportGenerator;
-import gov.nist.hit.core.service.ValidationReportGeneratorImpl;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -21,10 +21,10 @@ public class SSWebBeanConfig {
 	      return new HL7V2ResourcebundleLoaderImpl();
 	  }
 
-	  @Bean
-	  public ValidationReportGenerator  hl7v2ValidationReportGenerator() {
-	      return new ValidationReportGeneratorImpl ();
-	  }
+	 @Bean
+	  public HL7V2ValidationReportGenerator hl7v2ValidationReportGenerator() {
+	      return new HL7V2ValidationReportGeneratorImpl();
+	 }
 
 	  @Bean
 	  public HL7V2MessageValidator hl7v2MessageValidator() {
