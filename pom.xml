@@ -10,12 +10,12 @@
 		<dependency>
 			<groupId>gov.nist.healthcare.mu.ss</groupId>
 			<artifactId>ss-r2-resource-bundle</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<version>${resourcebundle.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>gov.nist.healthcare.mu.ss</groupId>
 			<artifactId>ss-r2-message-validation</artifactId>
-			<version>0.0.1-SNAPSHOT</version>	
+			<version>${messagevalidation.version}</version>	
 		</dependency>
 		<dependency>
 			<groupId>gov.nist.hit.core.hl7v2</groupId>
@@ -40,5 +40,7 @@
   	</build>
 	<properties>
 		<hitcorehl7v2.version>1.0.1</hitcorehl7v2.version>
+		<messagevalidation.version>1.0.0</messagevalidation.version>
+		<resourcebundle.version>0.0.1-SNAPSHOT</resourcebundle.version>
 	</properties>
 </project>
