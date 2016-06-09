@@ -61,8 +61,8 @@
 	</distributionManagement>	
   	
 	<properties>
-		<hitcorehl7v2.version>1.0.6</hitcorehl7v2.version>
+		<hitcorehl7v2.version>1.0.7</hitcorehl7v2.version>
 		<messagevalidation.version>1.0.0</messagevalidation.version>
-		<resourcebundle.version>1.0.3</resourcebundle.version>
+		<resourcebundle.version>1.0.4</resourcebundle.version>
 	</properties>
 </project>
