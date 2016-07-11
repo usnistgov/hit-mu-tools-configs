@@ -1,6 +1,6 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>lri-r2-config</groupId>
+  <groupId>gov.nist.healthcare.mu.lri-r2</groupId>
   <artifactId>lri-r2-config</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <name>lri-r2-config</name>
@@ -9,15 +9,15 @@
   <dependencies>
 
 	<dependency>
-		  <groupId>gov.nist.healthcare.mu.lri.r2</groupId>
+		  <groupId>gov.nist.healthcare.mu.lri-r2</groupId>
 		  <artifactId>lri-r2-message-validation</artifactId>
-		  <version>0.0.1-SNAPSHOT</version>
+		  <version>${messagevalidation.version}</version>	
 		</dependency>
 		
 		<dependency>
-		  <groupId>gov.nist.healthcare.mu.lri.r2</groupId>
+		  <groupId>gov.nist.healthcare.mu.lri-r2</groupId>
 		  <artifactId>lri-r2-resource-bundle</artifactId>
-		  <version>0.0.1-SNAPSHOT</version>
+		  <version>${resourcebundle.version}</version>	
 		</dependency>
 		
 		<dependency>
@@ -40,14 +40,18 @@
 	      </plugin>
 	    </plugins>
   	</build>
-	<properties>
-		<hitcorehl7v2.version>1.0.2-SNAPSHOT</hitcorehl7v2.version>
-	</properties>
 	<repositories>
 		<repository>
 			<id>spring-milestones</id>
 			<url>http://repo.springsource.org/libs-milestone/</url>
 		</repository>
 	</repositories>
+	
+	<properties>
+		<hitcorehl7v2.version>1.0.8-SNAPSHOT</hitcorehl7v2.version>
+		<messagevalidation.version>0.0.1-SNAPSHOT</messagevalidation.version>
+		<resourcebundle.version>0.0.1-SNAPSHOT</resourcebundle.version>
+	</properties>
+	
 </project>
 
