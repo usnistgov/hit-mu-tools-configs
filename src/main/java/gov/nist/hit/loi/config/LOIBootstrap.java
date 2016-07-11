@@ -7,7 +7,6 @@ import java.io.IOException;
 
 import javax.annotation.PostConstruct;
 
-import org.codehaus.jackson.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -19,7 +18,7 @@ public class LOIBootstrap {
 	ResourcebundleLoader resourcebundleLoader;
 	
 	@PostConstruct
-	public void init() throws JsonProcessingException, ProfileParserException, IOException{
+	public void init() throws  ProfileParserException, IOException{
 		resourcebundleLoader.load();
 	}
 		

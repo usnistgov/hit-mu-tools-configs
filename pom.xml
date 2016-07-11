@@ -20,6 +20,22 @@
   		<artifactId>hit-core-hl7v2-api</artifactId>
   		<version>${hitcorehl7v2.version}</version>
   	</dependency>
+  	
+  	<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-core</artifactId>
+    <version>2.2.3</version>
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-databind</artifactId>
+    <version>2.2.3</version>
+</dependency>
+<dependency>
+    <groupId>com.fasterxml.jackson.core</groupId>
+    <artifactId>jackson-annotations</artifactId>
+    <version>2.2.3</version>
+</dependency>
   </dependencies>
   
   <build>
@@ -36,7 +52,7 @@
 	    </plugins>
   	</build>
   	<properties>
-		<hitcorehl7v2.version>1.0.4-SNAPSHOT</hitcorehl7v2.version>
+		<hitcorehl7v2.version>1.0.6-SNAPSHOT</hitcorehl7v2.version>
 		<messagevalidation.version>0.1.0-SNAPSHOT</messagevalidation.version>
 		<resourcebundle.version>0.1.0-SNAPSHOT</resourcebundle.version>
 	</properties>
