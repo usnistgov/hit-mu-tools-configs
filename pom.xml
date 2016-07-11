@@ -8,12 +8,12 @@
   	<dependency>
   		<groupId>gov.nist.healthcare.mu.edos</groupId>
   		<artifactId>eDOS-resource-bundle</artifactId>
-  		<version>0.1.0-SNAPSHOT</version>
+  		<version>${resourcebundle.version}</version>
   	</dependency>
   	<dependency>
   		<groupId>gov.nist.healthcare.mu.edos</groupId>
   		<artifactId>eDOS-message-validation</artifactId>
-  		<version>0.1.0-SNAPSHOT</version>
+  		<version>${messagevalidation.version}</version>
   	</dependency>
   	<dependency>
   		<groupId>gov.nist.hit.core.hl7v2</groupId>
@@ -36,6 +36,8 @@
 	    </plugins>
   	</build>
   <properties>
-  	<hitcorehl7v2.version>1.0.2-SNAPSHOT</hitcorehl7v2.version>
+  	<hitcorehl7v2.version>1.0.7</hitcorehl7v2.version>
+  	<messagevalidation.version>0.1.0-SNAPSHOT</messagevalidation.version>
+	<resourcebundle.version>0.1.0-SNAPSHOT</resourcebundle.version>
   </properties>
 </project>
