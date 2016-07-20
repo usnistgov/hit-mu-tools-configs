@@ -48,7 +48,7 @@
 	</repositories>
 	
 	<properties>
-		<hitcorehl7v2.version>1.0.8-SNAPSHOT</hitcorehl7v2.version>
+		<hitcorehl7v2.version>1.0.9-SNAPSHOT</hitcorehl7v2.version>
 		<messagevalidation.version>0.0.1-SNAPSHOT</messagevalidation.version>
 		<resourcebundle.version>0.0.1-SNAPSHOT</resourcebundle.version>
 	</properties>
