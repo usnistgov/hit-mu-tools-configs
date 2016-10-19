@@ -6,19 +6,24 @@
   <name>edos-r2-config</name>
   <dependencies>
   	<dependency>
-  		<groupId>gov.nist.healthcare.mu.edos</groupId>
-  		<artifactId>eDOS-resource-bundle</artifactId>
+  		<groupId>gov.nist.healthcare.mu.edos-r2</groupId>
+  		<artifactId>eDOS-r2-resource-bundle</artifactId>
   		<version>${resourcebundle.version}</version>
   	</dependency>
   	<dependency>
-  		<groupId>gov.nist.healthcare.mu.edos</groupId>
-  		<artifactId>eDOS-message-validation</artifactId>
+  		<groupId>gov.nist.healthcare.mu.edos-r2</groupId>
+  		<artifactId>eDOS-r2-message-validation</artifactId>
   		<version>${messagevalidation.version}</version>
   	</dependency>
   	<dependency>
   		<groupId>gov.nist.hit.core.hl7v2</groupId>
   		<artifactId>hit-core-hl7v2-api</artifactId>
   		<version>${hitcorehl7v2.version}</version>
+  	</dependency>
+  	<dependency>
+		  <groupId>com.h2database</groupId>
+		  <artifactId>h2</artifactId>
+		  <version>1.4.187</version>
   	</dependency>
   </dependencies>
   
@@ -36,8 +41,8 @@
 	    </plugins>
   	</build>
   <properties>
-  	<hitcorehl7v2.version>1.0.7</hitcorehl7v2.version>
-  	<messagevalidation.version>0.1.0-SNAPSHOT</messagevalidation.version>
-	<resourcebundle.version>0.1.0-SNAPSHOT</resourcebundle.version>
+  	<hitcorehl7v2.version>1.0.10</hitcorehl7v2.version>
+  	<messagevalidation.version>1.0.0</messagevalidation.version>
+	<resourcebundle.version>1.0.0</resourcebundle.version>
   </properties>
 </project>
