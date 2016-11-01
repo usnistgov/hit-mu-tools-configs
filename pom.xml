@@ -40,6 +40,11 @@
   
   <build>
 	    <plugins>
+	    <plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.2</version>
+			</plugin>
 	      <plugin>
 	        <groupId>org.apache.maven.plugins</groupId>
 	        <artifactId>maven-compiler-plugin</artifactId>
@@ -51,9 +56,25 @@
 	      </plugin>
 	    </plugins>
   	</build>
+  	<scm>
+		<connection>scm:git:https://github.com/usnistgov/hit-mu-tools-configs.git</connection>
+		<developerConnection>scm:git:https://github.com/usnistgov/hit-mu-tools-configs.git</developerConnection>
+	  <tag>HEAD</tag>
+  </scm>
+	<distributionManagement>
+		<repository>
+			<id>releases</id>
+			<url>http://vm-070.nist.gov:8081/nexus/content/repositories/releases</url>
+		</repository>
+		<snapshotRepository>
+			<id>snapshots</id>
+			<name>Internal Snapshots</name>
+			<url>http://vm-070.nist.gov:8081/nexus/content/repositories/snapshots</url>
+		</snapshotRepository>
+	</distributionManagement>	
   	<properties>
-		<hitcorehl7v2.version>1.0.6-SNAPSHOT</hitcorehl7v2.version>
-		<messagevalidation.version>0.1.0-SNAPSHOT</messagevalidation.version>
-		<resourcebundle.version>0.1.0-SNAPSHOT</resourcebundle.version>
+		<hitcorehl7v2.version>1.0.10</hitcorehl7v2.version>
+		<messagevalidation.version>0.1.0</messagevalidation.version>
+		<resourcebundle.version>0.1.0</resourcebundle.version>
 	</properties>
 </project>
