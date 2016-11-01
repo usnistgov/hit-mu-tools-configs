@@ -63,7 +63,7 @@
 		</snapshotRepository>
 	</distributionManagement>	
 	<properties>
-		<hitcorehl7v2.version>1.0.9-SNAPSHOT</hitcorehl7v2.version>
+		<hitcorehl7v2.version>1.0.10</hitcorehl7v2.version>
 		<messagevalidation.version>0.0.5</messagevalidation.version>
 		<resourcebundle.version>0.0.1</resourcebundle.version>
 	</properties>
