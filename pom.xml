@@ -68,9 +68,9 @@
 		</snapshotRepository>
 	</distributionManagement>	
 	<properties>
-		<hitcorehl7v2.version>1.0.10</hitcorehl7v2.version>
-		<messagevalidation.version>0.0.5</messagevalidation.version>
-		<resourcebundle.version>0.0.2</resourcebundle.version>
+		<hitcorehl7v2.version>1.0.11</hitcorehl7v2.version>
+		<messagevalidation.version>1.0.0</messagevalidation.version>
+		<resourcebundle.version>1.0.0</resourcebundle.version>
 	</properties>
 	
 </project>
