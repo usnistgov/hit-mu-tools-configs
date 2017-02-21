@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>gov.nist.healthcare.mu.loi-r1</groupId>
   <artifactId>loi-r1-config</artifactId>
-  <version> 0.1.1-SNAPSHOT</version>
+  <version>1.0.0-SNAPSHOT</version>
   <name>loi-r1-config</name>
   <dependencies>
   	<dependency>
@@ -73,8 +73,8 @@
 		</snapshotRepository>
 	</distributionManagement>	
   	<properties>
-		<hitcorehl7v2.version>1.0.10</hitcorehl7v2.version>
-		<messagevalidation.version>0.1.0</messagevalidation.version>
-		<resourcebundle.version>0.1.0</resourcebundle.version>
+		<hitcorehl7v2.version>1.0.12</hitcorehl7v2.version>
+		<messagevalidation.version>1.0.0</messagevalidation.version>
+		<resourcebundle.version>1.0.0</resourcebundle.version>
 	</properties>
 </project>
