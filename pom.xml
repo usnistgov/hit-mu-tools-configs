@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>gov.nist.healthcare.mu.edos-r2</groupId>
   <artifactId>edos-r2-config</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <name>edos-r2-config</name>
   <dependencies>
   	<dependency>
@@ -21,10 +21,26 @@
   		<version>${hitcorehl7v2.version}</version>
   	</dependency>
   	<dependency>
-		  <groupId>com.h2database</groupId>
-		  <artifactId>h2</artifactId>
-		  <version>1.4.187</version>
-  	</dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+			<version>2.8.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+			<version>2.8.8</version>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+			<version>2.8.8</version>
+		</dependency>
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.39</version>
+		</dependency>
+  	
   </dependencies>
   
   <build>
@@ -54,17 +70,17 @@
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
-			<url>http://vm-070.nist.gov:8081/nexus/content/repositories/releases</url>
+			<url>https://hit-dev.nist.gov:9001/repository/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Internal Snapshots</name>
-			<url>http://vm-070.nist.gov:8081/nexus/content/repositories/snapshots</url>
+			<url>https://hit-dev.nist.gov:9001/repository/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>	
   <properties>
-  	<hitcorehl7v2.version>1.0.10</hitcorehl7v2.version>
-  	<messagevalidation.version>1.0.0</messagevalidation.version>
-	<resourcebundle.version>1.0.0</resourcebundle.version>
+  	<hitcorehl7v2.version>1.0.16</hitcorehl7v2.version>
+  	<messagevalidation.version>1.0.1</messagevalidation.version>
+	<resourcebundle.version>1.1.0</resourcebundle.version>
   </properties>
 </project>
