@@ -21,7 +21,11 @@
 			<artifactId>hit-core-hl7v2-api</artifactId>
 			<version>${hitcorehl7v2.version}</version>
 		</dependency>
-		
+		<dependency>
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>5.1.39</version>
+		</dependency>
     </dependencies>
 		
 	<build>
@@ -51,18 +55,18 @@
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
-			<url>http://vm-070.nist.gov:8081/nexus/content/repositories/releases</url>
+			<url>https://hit-dev.nist.gov:9001/repository/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Internal Snapshots</name>
-			<url>http://vm-070.nist.gov:8081/nexus/content/repositories/snapshots</url>
+			<url>https://hit-dev.nist.gov:9001/repository/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>	
   	
 	<properties>
-		<hitcorehl7v2.version>1.0.12</hitcorehl7v2.version>
+		<hitcorehl7v2.version>1.0.19</hitcorehl7v2.version>
 		<messagevalidation.version>1.0.0</messagevalidation.version>
-		<resourcebundle.version>1.0.7</resourcebundle.version>
+		<resourcebundle.version>1.0.8-SNAPSHOT</resourcebundle.version>
 	</properties>
 </project>
