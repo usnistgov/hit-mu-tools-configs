@@ -18,7 +18,7 @@ public class SSBootstrap {
 	ResourcebundleLoader resourcebundleLoader;
 	
 	@PostConstruct
-	public void init() throws  ProfileParserException, IOException{
+	public void init() throws  Exception{
 		resourcebundleLoader.load();
 	}
 	
