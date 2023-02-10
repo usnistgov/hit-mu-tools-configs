@@ -83,6 +83,6 @@
 	<properties>
 		<hitcorehl7v2.version>1.0.21</hitcorehl7v2.version>
 		<messagevalidation.version>1.0.0</messagevalidation.version>
-		<resourcebundle.version>1.0.10-SNAPSHOT</resourcebundle.version>
+		<resourcebundle.version>1.0.10</resourcebundle.version>
 	</properties>
 </project>
