@@ -24,8 +24,24 @@
 		<dependency>
 		    <groupId>mysql</groupId>
 		    <artifactId>mysql-connector-java</artifactId>
-		    <version>5.1.39</version>
+		    <version>5.1.49</version>
 		</dependency>
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpclient</artifactId>
+			<version>4.5.2</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.httpcomponents</groupId>
+			<artifactId>httpcore</artifactId>
+			<version>4.4.5</version>
+		</dependency>
+		<dependency>
+    <groupId>javax.xml.ws</groupId>
+    <artifactId>jaxws-api</artifactId>
+    <version>2.3.1</version>
+</dependency>
     </dependencies>
 		
 	<build>
@@ -55,18 +71,18 @@
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
-			<url>https://hit-dev.nist.gov:9001/repository/releases</url>
+			<url>https://hit-nexus.nist.gov/repository/releases</url>
 		</repository>
 		<snapshotRepository>
 			<id>snapshots</id>
 			<name>Internal Snapshots</name>
-			<url>https://hit-dev.nist.gov:9001/repository/snapshots</url>
+			<url>https://hit-nexus.nist.gov/repository/snapshots</url>
 		</snapshotRepository>
 	</distributionManagement>	
   	
 	<properties>
 		<hitcorehl7v2.version>1.0.21</hitcorehl7v2.version>
 		<messagevalidation.version>1.0.0</messagevalidation.version>
-		<resourcebundle.version>1.0.9</resourcebundle.version>
+		<resourcebundle.version>1.0.10-SNAPSHOT</resourcebundle.version>
 	</properties>
 </project>
